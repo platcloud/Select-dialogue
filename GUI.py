@@ -91,8 +91,7 @@ class Ico(QMainWindow):
        STR=self.tx1.toPlainText()
        m=BACK.trans(STR)
        for l in m:
-           for h in l:
-              self.tx2.append(h)
+           self.tx2.append(l)
 
    def save_text(self):
        fname = QFileDialog.getSaveFileName(self, '保存文件', './', ("*.txt"))
